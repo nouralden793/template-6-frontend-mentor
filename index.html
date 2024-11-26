@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissers</title>
+    <link rel="stylesheet" href="./css//output.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-[#192346] overflow-x-hidden md:overflow-hidden">
+    <div class="project min-h-[100vh]">
+      <div class="normal min-h-[100vh]">
+        <div
+          class="container min-h-[100vh] flex flex-col items-center justify-between md:justify-around"
+        >
+          <header class="score-box">
+            <ul>
+              <img src="./images/logo.svg" alt="" />
+            </ul>
+            <div class="score">
+              <span>Score</span>
+              <p>0</p>
+            </div>
+          </header>
+          <div class="game h-[313px] relative flex mx-[30px] md:mx-0">
+            <img src="./images/bg-triangle.svg" alt="" />
+            <div class="paper absolute -top-[10%] -left-[10%]">
+              <img src="./images/icon-paper.svg" class="paper-img" alt="" />
+            </div>
+            <div class="scissers absolute -top-[10%] -right-[10%]">
+              <img
+                src="./images/icon-scissors.svg"
+                class="scissers-img"
+                alt=""
+              />
+            </div>
+            <div class="rock absolute bottom-0 left-[50%] -translate-x-[50%]">
+              <img src="./images/icon-rock.svg" class="rock-img" alt="" />
+            </div>
+          </div>
+          <div
+            class="play -mt-[30%] sm:-mt-[35%] md:-mt-[5%] items-center py-[100px] justify-between gap-[35px] hidden h-[313px] sm:gap-[75px] md:py-0"
+          >
+            <div class="box">
+              <p class="text-center text-white mb-[30px] font-semibold text-xl">
+                You Picked
+              </p>
+              <div class="choosen-img"></div>
+            </div>
+            <div class="playAgain w-[200px] hidden">
+              <p class="text-white text-5xl mb-2 text-center"></p>
+              <button type="button">Play Again</button>
+            </div>
+            <div class="house-box flex items-center flex-col">
+              <p
+                class="text-center text-nowrap text-white mb-[30px] font-semibold text-[15px] sm:text-lg"
+              >
+                The House Picked
+              </p>
+              <div class="house-choosen-img"></div>
+            </div>
+          </div>
+          <div>
+            <button type="button" class="rules z-50">rules</button>
+            <div class="rules-nomal">
+              <header>
+                <h1>Rules</h1>
+                <img src="./images/icon-close.svg" class="close" alt="" />
+              </header>
+              <img src="./images/image-rules.svg" class="w-full" alt="" />
+            </div>
+          </div>
+          <button type="button" class="normal-btn rules-normal-btn">
+            Bonus
+          </button>
+        </div>
+      </div>
+      <div class="layout z-20"></div>
+      <div class="bonus min-h-[100vh] hidden">
+        <div
+          class="container min-h-[100vh] flex flex-col items-center justify-between md:justify-around pb-[50px] md:pb-0"
+        >
+          <header class="score-box">
+            <ul>
+              <img
+                src="./images/logo-bonus.svg"
+                class="h-[93px] md:h-fit"
+                alt=""
+              />
+            </ul>
+            <div class="score">
+              <span>Score</span>
+              <p>0</p>
+            </div>
+          </header>
+          <div
+            class="game -mt-[40px] h-[313px] relative flex mx-[30px] md:mx-0 md:-mt-0"
+          >
+            <img src="./images/bg-pentagon.svg" alt="" />
+            <div
+              class="paper absolute top-[40%] -translate-y-[50%] -right-[10%]"
+            >
+              <img src="./images/icon-paper.svg" class="paper-img" alt="" />
+            </div>
+            <div
+              class="scissers absolute -top-[10%] left-[50%] -translate-x-[50%]"
+            >
+              <img
+                src="./images/icon-scissors.svg"
+                class="scissers-img"
+                alt=""
+              />
+            </div>
+            <div class="rock absolute -bottom-[15%] right-0">
+              <img src="./images/icon-rock.svg" class="rock-img" alt="" />
+            </div>
+            <div class="lizard absolute -bottom-[15%] left-0">
+              <img src="./images/icon-lizard.svg" class="lizard-img" alt="" />
+            </div>
+            <div
+              class="spock absolute top-[40%] -translate-y-[50%] -left-[10%]"
+            >
+              <img
+                src="./images/icon-spock.svg"
+                class="spock-img relative bottom-[5px] left-[3px]"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="play -mt-[30%] sm:-mt-[25%] md:-mt-[5%] items-center justify-between gap-[35px] hidden h-[313px] sm:gap-[75px]"
+          >
+            <div class="box">
+              <p class="text-center text-white mb-[30px] font-semibold text-xl">
+                You Picked
+              </p>
+              <div class="choosen-img"></div>
+            </div>
+            <div class="playAgainNormal w-[200px] hidden">
+              <p class="text-white text-5xl mb-2 text-center"></p>
+              <button type="button">Play Again</button>
+            </div>
+            <div class="house-box flex flex-col items-center">
+              <p
+                class="text-center text-nowrap text-white mb-[30px] font-semibold text-[15px] sm:text-lg"
+              >
+                The House Picked
+              </p>
+              <div class="house-choosen-img"></div>
+            </div>
+          </div>
+          <div>
+            <button type="button" class="bonus-rules">rules</button>
+            <div class="rules-bonus">
+              <header>
+                <h1>Rules</h1>
+                <img src="./images/icon-close.svg" class="close" alt="" />
+              </header>
+              <img src="./images/image-rules-bonus.svg" class="w-full" alt="" />
+            </div>
+          </div>
+          <button type="button" class="bonus-btn rules-bonus-btn hidden">
+            Origianl
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
